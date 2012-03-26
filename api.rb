@@ -7,4 +7,13 @@ class API < Sinatra::Base
     
     {:sushi => ["Maguro", "Hamachi", "Uni", "Saba", "Ebi", "Sake", "Tai"]}.to_json
   end
+
+  get '/css/:name.css' do
+    content_type 'text/css', :charset => 'utf-8'
+    scss(:"/stylesheets/#{params[:name]}")
+  end
+
+  get '/' do
+    erb :index
+  end
 end
