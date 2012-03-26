@@ -15,8 +15,8 @@ header {
   text-align: center;
 
   background-color: #8f9325;
-  background-image: -webkit-gradient(radial, 50% 100%,100,50% -50%,100, from(rgb(186, 190, 51)), to(rgb(100, 105, 23)));
-  background-image: -webkit-radial-gradient(50% 0%, rgb(100, 105, 23), rgb(186, 190, 51));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(100, 105, 23)), to(rgb(186, 190, 51)));
+  background-image: -webkit-linear-gradient(top, rgb(100, 105, 23), rgb(186, 190, 51));
 
   color: white;
 
@@ -34,8 +34,8 @@ footer {
   height: 50px;
 
   background-color: #8f9325;
-  background-image: -webkit-gradient(radial, 50% 100%,100,50% -50%,100, from(rgb(186, 190, 51)), to(rgb(100, 105, 23)));
-  background-image: -webkit-radial-gradient(50% 0%, rgb(100, 105, 23), rgb(186, 190, 51));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(100, 105, 23)), to(rgb(186, 190, 51)));
+  background-image: -webkit-linear-gradient(top, rgb(100, 105, 23), rgb(186, 190, 51));
 
 
   padding: 0;
