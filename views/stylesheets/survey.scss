@@ -4,9 +4,9 @@ body {
 
 header {
   position: relative;
-  //z-index: 2;
-  //top: 10px;
-  padding-top: 5px;
+//z-index: 2;
+//top: 10px;
+ padding-top: 5px;
   left: 0;
   width: 100%;
   height: 30px;
@@ -22,7 +22,8 @@ header {
 
   font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-  //line-height: 45px;
+//line-height: 45px;
+
 }
 
 footer {
@@ -31,17 +32,14 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 45px;
 
-  background-color: #8f9325;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(100, 105, 23)), to(rgb(186, 190, 51)));
-  background-image: -webkit-linear-gradient(top, rgb(100, 105, 23), rgb(186, 190, 51));
-
+  background-color: #e3e3e3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(204, 204, 204)), to(rgb(250, 250, 250)));
+  background-image: -webkit-linear-gradient(top, rgb(204, 204, 204), rgb(250, 250, 250));
 
   padding: 0;
-  border-top: 1px solid #444;
-
-  font-size: 20px;
+//border-top: 1px solid #444; font-size: 20px;
   text-align: center;
   color: #f3f3f3;
   font-weight: bold;
@@ -59,5 +57,31 @@ footer {
   background: #f5f5f5;
   overflow: auto;
 }
+
+footer {
+
+  padding-top: 2px;
+
+  #no {
+    width: 35%;
+    left: 5px;
+    position: relative;
+    float: left;
+  }
+
+  #yes {
+    width: 60%;
+    right: 5px;
+    position: relative;
+    float: right;
+
+  }
+}
+
+.mainContent{
+  font-size: 120%;
+  padding: 5px;
+}
+
 
 
