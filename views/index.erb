@@ -9,13 +9,21 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Chicle' rel='stylesheet' type='text/css'>
 
+  <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <script language="javascript">
-      var theScroll;
-      function scroll() {
+      $(document).ready(function () {
+          var theScroll;
           theScroll = new iScroll('wrapper');
-      }
-      document.addEventListener('DOMContentLoaded', scroll, false);
+
+          $(".action").click(function () {
+              console.log(event.target.id);
+              $.post("/action", event.target.id);
+              $("footer").html("Thanks for your feedback!").addClass("response");
+          })
+
+      });
+
   </script>
 </head>
 
@@ -56,8 +64,8 @@
 </div>
 
 <footer style="width: 100%">
-  <button class="btn btn-large" id="no" href="#">No</button>
-  <button class="btn btn-large btn-success" id="yes" href="#">Yes</button>
+  <button class="btn btn-large action" id="no" href="#">No</button>
+  <button class="btn btn-large btn-success action" id="yes" href="#">Yes</button>
 </footer>
 
 <script type="text/javascript" src="/javascripts/iscroll-lite.js"></script>
