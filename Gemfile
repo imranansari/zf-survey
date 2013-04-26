@@ -1,6 +1,6 @@
 source :rubygems
-gem 'sinatra', '1.3.0'
-gem 'thin', '1.2.7'
+gem 'sinatra'
+gem 'thin'
 
 gem 'mongoid'
 gem 'sass'
